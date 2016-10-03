@@ -16,7 +16,7 @@ int main(){
 	return 0;
 }
 
-//funÁ„o captura dados iniciais
+//fun√ß√£o captura dados iniciais
 void inicio(){
 	char nome[30], palavra[27];
 
@@ -31,7 +31,7 @@ void inicio(){
 	funcForca(nome, palavra);
 }
 
-//Onde a m·gica acontece
+//Onde a m√°gica acontece
 void funcForca(char nome[30], char misterio[27]){
 
 	char tentativa, vetor[27], vetorTenta[27], certo, vetorAcerto[27];
@@ -55,7 +55,7 @@ void funcForca(char nome[30], char misterio[27]){
 
 	printf("\n\n%s advinhe a palavra \n\n\t", nome);
 
-	//PARTE RESPONSAVEL PELA MUDAN«A DA DECODIFICA«√O PELO CARACTER ACERTADO
+	//PARTE RESPONSAVEL PELA MUDAN√áA DA DECODIFICA√á√ÉO PELO CARACTER ACERTADO
 	for(y = 0; y < x; y++){
 		printf("%c ", vetor[y]);
 
@@ -72,7 +72,7 @@ void funcForca(char nome[30], char misterio[27]){
 	printf("\n\nTecle uma tecla: ");
 	tentativa = tolower(getche());
 
-	//PARTE COM CONSTANTES MUDAN«AS TENTATIVAS
+	//PARTE COM CONSTANTES MUDAN√áAS TENTATIVAS
 	vetorTenta[k] = tentativa;
 	k++;
 
@@ -88,7 +88,7 @@ void funcForca(char nome[30], char misterio[27]){
 
 	}
 
-	//PUXA FUN«√O PRINTA ERROS E CONSTROI O BONECO
+	//PUXA FUN√á√ÉO PRINTA ERROS E CONSTROI O BONECO
 	for(y = 0; y < 27; y++){
 		if(tentativa != misterio[y] && certo == 'f'){
 			contErro++;
