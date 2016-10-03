@@ -118,7 +118,7 @@ int remover(N ** rNodo){
     }
 }
 
-//insere uma lista em uma posicao específica ou em todas as posicoes do vetor d
+//insere uma lista em uma posicao especÃ­fica ou em todas as posicoes do vetor d
 void insereHash(H * v, int tempo, char * nomeRot, int tipo, int tarDiaria, int diaS){
         do{
             if(tipo == 1 && v->d[diaS].tempDia > tempo){
